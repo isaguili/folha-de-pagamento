@@ -1,4 +1,5 @@
-# 💵 Folha de Pagamento
+# Folha de Pagamento
+![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 
 Projeto desenvolvido como avaliação da disciplina de **Algoritmos e Programação** do curso de **Análise e Desenvolvimento de Sistemas**, com o objetivo de aplicar conceitos fundamentais de programação e modelagem de sistemas utilizando Java.
 
@@ -6,17 +7,14 @@ Além dos requisitos acadêmicos propostos, o projeto também incorporou estudos
 
 Durante o desenvolvimento foram trabalhados conceitos relacionados à **lógica de programação, Programação Orientada a Objetos, estruturação de algoritmos, modelagem de classes e construção de interfaces gráficas**.
 
+##  Funcionalidades
 
-## Objetivo
-
-Este projeto foi construído para:
-
-- Aplicar conceitos fundamentais de lógica de programação.
-- Simular o processamento de uma folha de pagamento.
-- Desenvolver cálculos relacionados a salário, adicionais e descontos.
-- Explorar a construção de interfaces desktop utilizando JavaFX.
-- Estruturar uma aplicação utilizando princípios de Programação Orientada a Objetos.
-
+-  Cadastro de funcionários.
+-  Suporte a diferentes tipos de funcionários.
+-  Cálculo automático da folha de pagamento.
+-  Geração automática de matrícula dos funcionários.
+-  Listagem dos funcionários cadastrados.
+-  Aplicação de regras de negócio específicas para cada categoria de funcionário.
 
 ## Tecnologias
 
@@ -27,20 +25,76 @@ Este projeto foi construído para:
   <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white"/>
 </p>
 
-
 ## Principais aprendizados
 
-- Aplicação prática de conceitos de **lógica de programação** e resolução de problemas computacionais.  
-- Estruturação de classes e métodos utilizando princípios da **Programação Orientada a Objetos (POO)**.  
-- Implementação de regras de negócio relacionadas ao cálculo de remuneração.  
-- Desenvolvimento de interfaces gráficas desktop com **JavaFX**.  
-- Manipulação de eventos e interação entre interface gráfica e processamento de dados.  
+Durante o desenvolvimento deste projeto foram praticados os seguintes conceitos:
 
-## Observações
+- Programação Orientada a Objetos (POO).
+- Herança e polimorfismo.
+- Encapsulamento.
+- Organização do projeto em camadas.
+- Separação entre regras de negócio e interface.
+- Estruturação de aplicações Java utilizando JavaFX.
+- Manipulação de coleções para gerenciamento dos funcionários.
 
-O projeto representou uma oportunidade de aprofundar conhecimentos além do conteúdo apresentado na disciplina, incorporando estudos independentes sobre JavaFX para ampliar a experiência prática no desenvolvimento de aplicações desktop em Java.
+##  Estrutura do Projeto
 
+```text
+folha-de-pagamento/
+├── src/
+│   ├── java/
+│   │   └── com/template/
+│   │       ├── model/             # Classes de domínio
+│   │       ├── repository/        # Armazenamento dos funcionários
+│   │       ├── service/           # Regras de negócio
+│   │       └── view/              # Interface da aplicação
+│   │           ├── Main.java
+│   │           └── MainController.java
+│   └── resources/                 # Recursos da aplicação
+├── .gitignore
+└── README.md
+```
 
-## 👩‍💻 Autora
-**Isabella Guimarães**  
-Estudante de Análise e Desenvolvimento de Sistemas
+---
+
+## Arquitetura
+
+A aplicação foi organizada em camadas, seguindo o princípio da **separação de responsabilidades**.
+
+- **model:** representa as entidades da aplicação e suas especializações.
+- **repository:** responsável pelo gerenciamento dos funcionários cadastrados.
+- **service:** implementa as regras de negócio, como cálculo da folha de pagamento e geração de matrícula.
+- **view:** contém a interface da aplicação desenvolvida com JavaFX.
+- **resources:** armazena os recursos utilizados pela interface.
+
+## Como executar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/isaguili/folha-de-pagamento.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd folha-de-pagamento
+```
+
+3. Abra o projeto em uma IDE compatível
+> Projeto desenvolvido no IntelliJ IDEA
+
+4. Execute a aplicação:
+
+> Execute a classe:
+
+```text
+Main.java
+```
+
+A aplicação JavaFX será iniciada automaticamente.
+
+> **Pré-requisitos**
+>
+> - Java JDK 21 ou superior.
+> - JavaFX SDK configurado na IDE.
